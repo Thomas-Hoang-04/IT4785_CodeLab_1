@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:layout_width="386dp"
+            android:layout_height="61dp"
+            android:text="@string/happy_birthday"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/greetings"
+            app:layout_constraintHorizontal_bias="0.168" app:layout_constraintVertical_bias="0.111"
+            android:textSize="40sp" android:fontFamily="sans-serif-light" android:gravity="center"
+            tools:ignore="TextSizeCheck"/>
+    <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="480dp"
+            android:layout_height="79dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/materialToolbar"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.666"/>
+    <TextView
+            android:text="@string/from_thomas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="214dp"
+            android:layout_height="49dp" android:id="@+id/send_person"
+            app:layout_constraintHorizontal_bias="0.906" app:layout_constraintVertical_bias="0.956"
+            android:textSize="32sp" android:fontFamily="sans-serif-light" android:gravity="center"
+            android:textColor="@color/black" tools:ignore="TextSizeCheck"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
